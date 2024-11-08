@@ -34,7 +34,7 @@ const listSchema = new mongoose.Schema({
     },
     userId: {
         type: String,
-        requires:true,
+        required: true,  // Corrected here
     },
     problemLinks: [problemLinkSchema], // Embeds an array of problem links
 }, { timestamps: true }); // Automatically add createdAt and updatedAt fields
